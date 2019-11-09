@@ -1,0 +1,46 @@
+.card {
+    margin-top: 10px;
+}
+
+.jumbotron {
+ background-image: url(https://images.axios.com/g794WHkAcfHtWFsvCEvv9ipL1rg=/1920x1080/smart/2017/12/15/1513306441383.jpg);
+ //background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-bottom: 0px;
+}
+
+.jumbo-title, .jumbo-text {
+    color: white;
+}
+
+.brandlogo {
+    color: #f64060;
+}
+
+.btn-primary{
+    background-color: #f64060;
+    border-color: #f64060;
+}
+
+.btn-primary:hover, .btn-primary:visited {
+    background-color: #ee1c43;
+    border-color: #ee1c43;
+}
+
+.navbar-default .navbar-brand {
+    color: #f64060;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.members {
+    color: #f64060;
+}
+
+.navbar {
+    margin-top: 5px;
+}

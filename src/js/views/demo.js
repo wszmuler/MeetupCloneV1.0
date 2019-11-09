@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import PropTypes from "prop-types";
 import { Consumer } from "../store/appContext";
 
 import "../../styles/demo.scss";
@@ -10,7 +10,7 @@ export const Demo = () => (
 		<ul className="list-group">
 			<Consumer>
 				{({ store, actions }) => {
-					return store.demo.map((item, index) => {
+					return store.events.map((item, index) => {
 						return (
 							<li
 								key={index}

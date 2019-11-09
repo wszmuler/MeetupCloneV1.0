@@ -30,6 +30,57 @@ const injectContext = PassedComponent => {
 			 * state.loadSomeData(); <---- calling this function from the flux.js actions
 			 *
 			 **/
+			const groups = fetch("https://assets.breatheco.de/apis/fake/meetup/groups")
+				.then(response => {
+					if (!response.ok) {
+						throw Error(response.statusText);
+					}
+					// Examine the text in the response
+					return response.json();
+				})
+				.catch(function(err) {
+					console.log("Fetch Error :-S", err);
+				});
+
+			const events = fetch("https://assets.breatheco.de/apis/fake/meetup/events")
+				.then(response => {
+					if (!response.ok) {
+						throw Error(response.statusText);
+					}
+					// Examine the text in the response
+					return response.json();
+				})
+				.catch(function(err) {
+					console.log("Fetch Error :-S", err);
+				});
+
+			const session = fetch("https://assets.breatheco.de/apis/fake/meetup/session")
+				.then(response => {
+					if (!response.ok) {
+						throw Error(response.statusText);
+					}
+					// Examine the text in the response
+					return response.json();
+				})
+				.catch(function(err) {
+					console.log("Fetch Error :-S", err);
+				});
+
+			Promise.all([groups, events, session])
+				.then(data => {
+					setState({
+						...state,
+						store: {
+							...state.store,
+							groups: data[0],
+							events: data[1],
+							session: data[2]
+						}
+					});
+				})
+				.catch(function(err) {
+					console.log("Fetch Error :-S", err);
+				});
 		}, []);
 
 		// the initial value for the context its not null anymore, but the current state of this component,
