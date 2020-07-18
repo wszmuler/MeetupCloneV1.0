@@ -70,7 +70,7 @@
 	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
-		"lodash": "^4.17.15",
+		"lodash": "^4.17.19",
 		"mdbootstrap": "^4.8.11",
 		"moment": "^2.24.0",
 		"prop-types": "^15.6.1",
