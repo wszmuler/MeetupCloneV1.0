@@ -72,7 +72,7 @@
 		"bootstrap": "^4.3.1",
 		"lodash": "^4.17.15",
 		"mdbootstrap": "^4.8.11",
-		"moment": "^2.24.0",
+		"moment": "^2.29.2",
 		"prop-types": "^15.6.1",
 		"react": "^16.8.4",
 		"react-bootstrap": "^1.0.0-beta.14",
